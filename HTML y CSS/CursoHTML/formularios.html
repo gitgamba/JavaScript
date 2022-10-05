@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../Imagenes/sasuke icon.ico"><!--Aca pongo un icono-->
+    <title>Formularios</title>
+</head>
+<body>
+    <header>
+        <h1>Formularios</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="tagsbasicas.html">Tags basicas</a></li>
+                <li><a href="listas.html">Listas</a></li>
+                <li><a href="imagenes.html">Imagenes</a></li>
+                <li><a href="formularios.html">Formularios</a></li>
+            </ul>
+        </nav>
+    </header>
+    <br>
+    <article>
+                <form method="get"> <!--El atributo method se usa para trabajar en el backend-->
+                                <input type="text" value="nombre"><!--El value es una propiedad que va a tomar el valor del input-->
+                            <br>
+                                <input type="password">
+                            <br>
+                                <input type="number">
+                            <br>
+                                <input type="email"><!--El type valida que sea un formato adecauado para mail-->
+                            <br>
+                                <input type="color"><!--te deja setear un color-->
+                            <br>
+                                <input type="range" min="10" max ="100">
+                            <br>
+                                <input type="datetime-local" required=""><!--dd/mm/aaaa 12:00-->
+                            <!--el atributo required es una validacion para completar el campo-->
+                            <br>
+                                <textarea>Esto es una area de texto</textarea> <!--Funciona como input, esta area de texto la puede modificar el usuario, para evitar eso usar elñ atributo readonly-->
+                            <br>
+                                <input type="button" value="Boton"><!--Siembre debe tener value-->
+                            <br>
+                                <input type="submit"><!--boton que envia los datos, el value por defecto en "Enviar" y es internacional-->
+                </form>
+        </article>
+</body>
+</html>
