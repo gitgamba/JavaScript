@@ -1,0 +1,7 @@
+*{
+
+        font-family: Georgia, 'Times New Roman', Times, serif;/*tipografia*/
+        line-height: 1.9;/*tamaño de letra, inicia en el centro y toma la mitad del valor hacia arriba y la mitad hacia abajo*/
+        font-weight: normal;/*grosor e la letra*/
+
+}
