@@ -5,3 +5,31 @@
         font-weight: normal;/*grosor e la letra*/
 
 }
+
+h1{
+        background-color: blueviolet;
+        display: inline-block; /*ahora el elemento se comporta como un blocke y no como una linea, es decir el color violeta no se extiende hasta el final de la pagina*/
+        padding: 10px 15px; /*distancia entre el texto y el borde de la caja, el orden es EJE Y, EJE X. Tambien puede ser top,rigth,bottom(bott;abajo),left*/
+        height: 100px; /*Alto, se le suman 10px de cada lado por el padding*/
+        width: 500px;
+        text-align: center;
+        margin: 10px 10px;/*Separa el brode de una caja del resto de las cajas*/
+        border-radius: 20px;
+        border: 2px dashed black; /*Aca hay que informarse del boxmodel y cual es su jerarquia*/
+        box-shadow: 0px 0px 0px 15px blue ; /*Eje x, Eje y, tamaño de la sombra */
+        text-shadow: 2px 4px 15px blue, 2px 4px 15px blue, 2px 4px 15px blue ; /*AL replicarlo se hace mas intenso*/
+        transform:rotate(0deg)/*Inclinacion*/
+    }
+    .caja1, .caja2{
+        height: 200px;
+        width: 500px;
+        text-align: center;
+        padding: 10px;
+    }
+    .caja1{
+        background-color: aqua;
+    }
+
+    .caja2{
+        background-color: cadetblue;
+    }
