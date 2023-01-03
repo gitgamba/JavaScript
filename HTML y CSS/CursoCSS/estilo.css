@@ -1,4 +1,4 @@
-*{
+|*{
 
         font-family: Georgia, 'Times New Roman', Times, serif;/*tipografia*/
         line-height: 1.9;/*tamaño de letra, inicia en el centro y toma la mitad del valor hacia arriba y la mitad hacia abajo*/
@@ -20,16 +20,60 @@ h1{
         text-shadow: 2px 4px 15px blue, 2px 4px 15px blue, 2px 4px 15px blue ; /*AL replicarlo se hace mas intenso*/
         transform:rotate(0deg)/*Inclinacion*/
     }
-    .caja1, .caja2{
+    .caja1, .caja2, .caja3{
         height: 200px;
         width: 500px;
         text-align: center;
-        padding: 10px;
+        padding: 50px;
+
+        outline: 2px solid black; /*La principal diferencia con el border es que outline no ocupa espacio, no afecta las otras cajas */
+        position: absolute; /*El ": absolute" hace que el espacio reservado ya no este mas reservado. Osea que otra caja puede ocupar su lugar*/
+        /*Al usar top y left con "position: absolute" el punto de referencia es a partir del viewport o del CONTENEDOR en el que esten*/
+
+
+    }
+    .contenedor{
+                position: relative;/*Posiciona la caja, define su lugar. Permite que al cambiar la posicion de la caja, esta sea relativa, es decir, la caja se se mueve pero en realidad sigue estando en el mismo espacio. En su espacio reservado.*/
+                                    /*El punto de referencia es muy importante en el box position, el punto de referencia cuando usamos ": relative" es el espacio reservado original de la caja*/
+                background-color: gray;
+                margin: 50px 50px;
+                border: 4px solid black;
+                width: 1250px;
+                height: 1250px;
     }
     .caja1{
-        background-color: aqua;
+        background-color: lightcoral;
+        top: 250px;
+        left: 50px;/*las jerarquias del relative son top, left; bottom,rigth(estas dos solo si no hay top o left) y los pixeles se cuentan desde el lugar "original de la caja"*/
     }
 
     .caja2{
-        background-color: cadetblue;
+        background-color: lightsalmon;
+        right: 50px;
+        top: 250px;
+        z-index: 0; /*Este indice define quien esta por encima de quien en el EJE Z, el valor por defecto es 0. Recordar que tiene conflictos con la herencia*/
+    }
+    .caja3{
+        background-color: khaki;
+        bottom: 250px;
+        left: 375px;
+    }
+
+    .caja4, .caja5{
+        height: 200px;
+        width: 500px;
+        text-align: center;
+        padding: 50px;
+        outline: 2px solid black;
+        margin: 10px auto;
+    }
+    .caja4{
+        background-color: red;
+        position: fixed; /*se se usa sticky, funciona parecido pero le podes dar un lugar fijo a la caja*/
+        right: 5px;
+        top: 0px;
+        opacity: .4;
+    }
+    .caja5{
+        background-color: blue;
     }
