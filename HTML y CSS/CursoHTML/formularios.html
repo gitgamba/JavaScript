@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -25,25 +25,24 @@
     </header>
     <br>
     <article>
-                <form method="get"> <!--El atributo method se usa para trabajar en el backend-->
-                                <input type="text" value="nombre"><!--El value es una propiedad que va a tomar el valor del input-->
+                <form action="" method="get"> <!--El atributo method se usa para trabajar en el backend, el action (url a donde se enviaran los datos) lo van a completar los de backend aunque es buena practica ponerlo vacio-->
+                                              <!--get envia los parametros a travez de la url, si no le das nombre a cada variable es mala practica para los backends, si no queres que se vean los datos tenes que usar post-->
+                                <input type="text" value="Usuario" name="usuario" ><!--El value es una propiedad que va a tomar el valor del input, nose bien que es perp se me confunde con el name, el name lo explico abajo-->
                             <br>
-                                <input type="password">
+                                <input type="password" name="contraseña" ><!--El name es el nombre de la variable que enviaste a traves del method,que va a tomar el valor del input-->
                             <br>
-                                <input type="number">
+                                <input type="number" value="Edad" name="edad" placeholder="Ingrese Edad"><!--Es este caso, usando metodo get, la url quedaria "....html?edad=(numero ingresado)"-->
                             <br>
-                                <input type="email"><!--El type valida que sea un formato adecauado para mail-->
+                                <input type="email" placeholder="Ingrese Email" name="email"><!--El type valida que sea un formato adecauado para mail-->
                             <br>
-                                <input type="color"><!--te deja setear un color-->
+                                <input type="color" value="Color favortito" name="color" ><!--te deja setear un color-->
                             <br>
-                                <input type="range" min="10" max ="100">
+                                <input type="range" min="10" max ="100" value="Calidad de servicio" name="calidad">
                             <br>
-                                <input type="datetime-local" required=""><!--dd/mm/aaaa 12:00-->
+                                <input type="datetime-local" required="" value="Fecha de inscripcion" name="fecha_inscripcion"><!--dd/mm/aaaa 12:00-->
                             <!--el atributo required es una validacion para completar el campo-->
                             <br>
-                                <textarea>Esto es una area de texto</textarea> <!--Funciona como input, esta area de texto la puede modificar el usuario, para evitar eso usar elñ atributo readonly-->
-                            <br>
-                                <input type="button" value="Boton"><!--Siembre debe tener value-->
+                                <textarea>Esto es una area de texto</textarea> <!--Funciona como input, esta area de texto la puede modificar el usuario, para evitar eso usar el atributo readonly-->
                             <br>
                                 <input type="submit"><!--boton que envia los datos, el value por defecto en "Enviar" y es internacional-->
                 </form>

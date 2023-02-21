@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -25,12 +25,14 @@
     <br>
     aca va la <b>imagen</b>
     <br>
-    <p><img src="../imagenes/meme.jpg "controls alt="meme" title="El mejor meme"></p> <!-- Se recomienda no cambiar el tamaño aca, y cambiarlo luego con css, el alt es importante para el seo -->
+    <p><img src="../imagenes/meme.jpg "controls alt="meme" title="El mejor meme" alt="Imagen del mejor meme"></p> <!-- Se recomienda no cambiar el tamaño aca, y cambiarlo luego con css, el alt es importante para el seo, hasta google puede llegar a buscar una imagen si no se cargo tu imagen. Por eso bueno que sea descreiptivo -->
     <video controls>
         <!-- determinar la carpeta del video con el atributo src -->
         <!-- El atributo controls no tiene valor, el valor lo da el navegador, son los controles comunes para cualquier video imagen o audio -->
         <!-- Lo mismo secuede con la etiqueta audio -->
     </video>
+    <iframe src="https://www.youtube.com/embed/gIUo18_fVAY" title="Meme" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <!--iframe te permite insertar paginas en paginas, es muy util para poner videos de youtube. Solo tenes que ir al video y darle compartir y luego incorporar-->
     <h3>Estos son controles de video con el atributo controls</h3>
 </body>
 </html>
